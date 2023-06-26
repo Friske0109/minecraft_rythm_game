@@ -1,1 +1,0 @@
-scoreboard players set @e[tag=mrg_button2] mrg_music 2
