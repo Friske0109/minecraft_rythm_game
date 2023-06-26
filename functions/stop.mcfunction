@@ -1,0 +1,2 @@
+scoreboard players reset mrg_kyukurarin mrg_music
+scoreboard players reset mrg_kyukurarin mrg_loop
