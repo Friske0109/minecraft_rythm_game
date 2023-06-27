@@ -1,5 +1,5 @@
 summon block_display ~ ~ ~ {Tags:["mrg_bg"],block_state:{Name:"black_concrete"}}
-data modify entity @e[tag=mrg_bg,limit=1] transformation.scale set value [0.8f,1.6f,0.02f]
+data modify entity @e[tag=mrg_bg,limit=1] transformation.scale set value [1.2f,1.6f,0.02f]
 
 #クリック判定
 execute at @e[tag=mrg_bg,limit=1] run summon interaction ~0.4 ~ ~ {Tags:["mrg_detector"],width:0.8f,height:1.6f}
@@ -70,3 +70,25 @@ execute at @e[tag=mrg_line] run summon minecraft:block_display ~ ~-0.5 ~ {Tags:[
 execute at @e[tag=mrg_line] run summon minecraft:block_display ~0.205 ~-0.5 ~ {Tags:["mrg_judge","mrg_miss_judge1"]}
 execute at @e[tag=mrg_line] run summon minecraft:block_display ~0.405 ~-0.5 ~ {Tags:["mrg_judge","mrg_miss_judge2"]}
 execute at @e[tag=mrg_line] run summon minecraft:block_display ~0.605 ~-0.5 ~ {Tags:["mrg_judge","mrg_miss_judge3"]}
+
+#スコア関連
+execute at @e[tag=mrg_bg] run summon minecraft:text_display ~1.0 ~0.5 ~0.021 {text:'{"text":"GREAT :","color":"yellow","bold":true}',background:24,Tags:["mrg_score_labels","mrg_great_label"]}
+data modify entity @e[tag=mrg_great_label,limit=1] transformation.scale set value [0.2f,0.2f,0f]
+
+execute at @e[tag=mrg_bg] run summon minecraft:text_display ~1.0 ~0.45 ~0.021 {text:'{"text":"GOOD  :","color":"blue","bold":true}',background:24,Tags:["mrg_score_labels","mrg_good_label"]}
+data modify entity @e[tag=mrg_good_label,limit=1] transformation.scale set value [0.2f,0.2f,0f]
+
+execute at @e[tag=mrg_bg] run summon minecraft:text_display ~1.0 ~0.4 ~0.021 {text:'{"text":"BAD   :","color":"red","bold":true}',background:24,Tags:["mrg_score_labels","mrg_bad_label"]}
+data modify entity @e[tag=mrg_bad_label,limit=1] transformation.scale set value [0.2f,0.2f,0f]
+
+execute at @e[tag=mrg_bg] run summon minecraft:text_display ~1.0 ~0.35 ~0.021 {text:'{"text":"MISS  :","color":"gray","bold":true}',background:24,Tags:["mrg_score_labels","mrg_miss_label"]}
+data modify entity @e[tag=mrg_miss_label,limit=1] transformation.scale set value [0.2f,0.2f,0f]
+
+execute at @e[tag=mrg_bg] run summon minecraft:text_display ~1.0 ~0.7 ~0.021 {text:'{"text":"score","color":"white","bold":true}',background:24,Tags:["mrg_score_labels","mrg_score_label"]}
+data modify entity @e[tag=mrg_score_label,limit=1] transformation.scale set value [0.2f,0.2f,0f]
+
+execute at @e[tag=mrg_bg] run summon minecraft:text_display ~1.0 ~0.6 ~0.021 {text:'{"text":"score","color":"white","bold":true}',background:24,Tags:["mrg_score_labels","mrg_scoredis_label"]}
+data modify entity @e[tag=mrg_scoredis_label,limit=1] transformation.scale set value [0.2f,0.2f,0f]
+
+execute at @e[tag=mrg_bg] run summon minecraft:text_display ~0.4 ~0.6 ~0.021 {text:'{"text":"","color":"white"}',background:24,Tags:["mrg_score_labels","mrg_combo_label"]}
+data modify entity @e[tag=mrg_combo_label,limit=1] transformation.scale set value [0.4f,0.8f,0f]

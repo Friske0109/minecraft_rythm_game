@@ -3,3 +3,4 @@ title @p[tag=mrg_player] actionbar [{"text":"GOOD "},{"score":{"name":"mrg_combo
 
 scoreboard players add mrg_good mrg_music 1
 scoreboard players operation mrg_score mrg_music += mrg_score_good mrg_music
+scoreboard players set mrg_judge mrg_music 2
