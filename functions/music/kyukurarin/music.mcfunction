@@ -1,5 +1,6 @@
 scoreboard players add mrg_kyukurarin mrg_music 1
 scoreboard players add mrg_kyukurarin mrg_loop 0
+execute if score mrg_playing mrg_music matches 1 run function minecraft_rythm_game:music/kyukurarin/notes
 
 #intro
 execute if score mrg_kyukurarin mrg_music matches 48 run execute at @a run playsound minecraft:block.note_block.harp master @p ~ ~ ~ 1 1.19

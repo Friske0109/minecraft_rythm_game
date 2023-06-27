@@ -66,7 +66,7 @@ execute at @e[tag=mrg_line] run summon minecraft:block_display ~0.405 ~ ~ {Tags:
 execute at @e[tag=mrg_line] run summon minecraft:block_display ~0.605 ~ ~ {Tags:["mrg_judge","mrg_judge3"]}
 
 #見過ごし用エンティティ
-execute at @e[tag=mrg_line] run summon minecraft:block_display ~ ~-0.2 ~ {Tags:["mrg_judge","mrg_miss_judge0"]}
-execute at @e[tag=mrg_line] run summon minecraft:block_display ~0.205 ~-0.2 ~ {Tags:["mrg_judge","mrg_miss_judge1"]}
-execute at @e[tag=mrg_line] run summon minecraft:block_display ~0.405 ~-0.2 ~ {Tags:["mrg_judge","mrg_miss_judge2"]}
-execute at @e[tag=mrg_line] run summon minecraft:block_display ~0.605 ~-0.2 ~ {Tags:["mrg_judge","mrg_miss_judge3"]}
+execute at @e[tag=mrg_line] run summon minecraft:block_display ~ ~-0.5 ~ {Tags:["mrg_judge","mrg_miss_judge0"]}
+execute at @e[tag=mrg_line] run summon minecraft:block_display ~0.205 ~-0.5 ~ {Tags:["mrg_judge","mrg_miss_judge1"]}
+execute at @e[tag=mrg_line] run summon minecraft:block_display ~0.405 ~-0.5 ~ {Tags:["mrg_judge","mrg_miss_judge2"]}
+execute at @e[tag=mrg_line] run summon minecraft:block_display ~0.605 ~-0.5 ~ {Tags:["mrg_judge","mrg_miss_judge3"]}
