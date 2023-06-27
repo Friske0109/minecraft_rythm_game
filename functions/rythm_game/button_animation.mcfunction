@@ -24,3 +24,5 @@ data modify entity @e[tag=mrg_button2_label,limit=1] text set value '{"keybind":
 
 data modify entity @e[tag=mrg_button3_label,limit=1] text set value '{"text":""}'
 data modify entity @e[tag=mrg_button3_label,limit=1] text set value '{"keybind":"key.use","color":"black","bold":true}'
+
+#コンボ表記

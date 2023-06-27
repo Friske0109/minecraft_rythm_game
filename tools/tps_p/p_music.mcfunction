@@ -1,5 +1,3 @@
-#(p_music)
-
 scoreboard players add mrg_kyukurarin mrg_music 1
 scoreboard players add mrg_kyukurarin_notes mrg_music 1
 scoreboard players add mrg_kyukurarin mrg_loop 0

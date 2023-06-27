@@ -9,6 +9,9 @@ track_name = "kyukurarin"
 with open(path+track_name +'.json',mode="r",encoding="utf-8_sig") as f:
     sheet = json.load(f)
 
+notes = 0
 with open(dir_path + track_name + ".mcfunction",mode="w") as o:
     for note in sheet["notes"]:
         print("execute if score mrg_{}_notes mrg_music matches {} run function minecraft_rythm_game:rythm_game/note_summon/lane{}".format(track_name,note["num"],note["block"]),file=o)
+        notes += 1
+    print("scoreboard players set mrg_notes mrg_music {}".format(notes),file=o)
