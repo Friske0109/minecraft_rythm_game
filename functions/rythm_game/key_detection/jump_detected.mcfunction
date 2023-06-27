@@ -8,5 +8,5 @@ execute at @e[tag=mrg_judge1] run execute if entity @e[tag=mrg_notes_lane1,dista
 execute at @e[tag=mrg_judge1] run execute if entity @e[tag=mrg_notes_lane1,distance=0.1..0.2] run function minecraft_rythm_game:rythm_game/judgement/good
 execute at @e[tag=mrg_judge1] run execute if entity @e[tag=mrg_notes_lane1,distance=..0.1] run function minecraft_rythm_game:rythm_game/judgement/great
 
-kill @e[tag=mrg_current_note1]
+execute at @e[tag=mrg_judge1] run execute if entity @e[tag=mrg_notes_lane1,distance=..0.6] run kill @e[tag=mrg_current_note1]
 tag @e[tag=mrg_notes_lane1,sort=nearest,limit=1] add mrg_current_note1

@@ -1,4 +1,5 @@
 scoreboard players add mrg_kyukurarin mrg_music 1
+scoreboard players add mrg_kyukurarin_notes mrg_music 1
 scoreboard players add mrg_kyukurarin mrg_loop 0
 execute if score mrg_playing mrg_music matches 1 run function minecraft_rythm_game:music/kyukurarin/notes
 
