@@ -43,6 +43,6 @@ data modify entity @e[tag=mrg_scoredis_label,limit=1] text set value '["",{"scor
 
 data modify entity @e[tag=mrg_combo_label,limit=1] text set value '{"text":""}'
 execute if score mrg_judge mrg_music matches 1 run data modify entity @e[tag=mrg_combo_label,limit=1] text set value '["",{"text":"GREAT","color":"yellow","bold":"true"},{"score":{"name":"mrg_combo","objective":"mrg_music"},"color":"white","bold":"true"}]'
-execute if score mrg_judge mrg_music matches 2 run data modify entity @e[tag=mrg_combo_label,limit=1] text set value '["",{"text":"GOOD","color":"yellow","bold":"true"},{"score":{"name":"mrg_combo","objective":"mrg_music"},"color":"white","bold":"true"}]'
-execute if score mrg_judge mrg_music matches 3 run data modify entity @e[tag=mrg_combo_label,limit=1] text set value '["",{"text":"BAD","color":"yellow","bold":"true"},{"score":{"name":"mrg_combo","objective":"mrg_music"},"color":"white","bold":"true"}]'
+execute if score mrg_judge mrg_music matches 2 run data modify entity @e[tag=mrg_combo_label,limit=1] text set value '["",{"text":"GOOD","color":"blue","bold":"true"},{"score":{"name":"mrg_combo","objective":"mrg_music"},"color":"white","bold":"true"}]'
+execute if score mrg_judge mrg_music matches 3 run data modify entity @e[tag=mrg_combo_label,limit=1] text set value '["",{"text":"BAD","color":"red","bold":"true"},{"score":{"name":"mrg_combo","objective":"mrg_music"},"color":"white","bold":"true"}]'
 execute if score mrg_judge mrg_music matches 4 run data modify entity @e[tag=mrg_combo_label,limit=1] text set value '["",{"text":"MISS","color":"gray","bold":"true"}]'

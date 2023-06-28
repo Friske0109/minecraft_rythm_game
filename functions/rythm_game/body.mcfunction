@@ -60,16 +60,16 @@ execute at @e[tag=mrg_button3] run summon minecraft:text_display ~0.075 ~0.05 ~0
 data modify entity @e[tag=mrg_button3_label,limit=1] transformation.scale set value [0.15f,0.15f,0f]
 
 #判定用エンティティ
-execute at @e[tag=mrg_line] run summon minecraft:block_display ~ ~ ~ {Tags:["mrg_judge","mrg_judge0"]}
-execute at @e[tag=mrg_line] run summon minecraft:block_display ~0.205 ~ ~ {Tags:["mrg_judge","mrg_judge1"]}
-execute at @e[tag=mrg_line] run summon minecraft:block_display ~0.405 ~ ~ {Tags:["mrg_judge","mrg_judge2"]}
-execute at @e[tag=mrg_line] run summon minecraft:block_display ~0.605 ~ ~ {Tags:["mrg_judge","mrg_judge3"]}
+execute at @e[tag=mrg_line] run summon minecraft:block_display ~ ~-0.2 ~ {Tags:["mrg_judge","mrg_judge0"]}
+execute at @e[tag=mrg_line] run summon minecraft:block_display ~0.205 ~-0.2 ~ {Tags:["mrg_judge","mrg_judge1"]}
+execute at @e[tag=mrg_line] run summon minecraft:block_display ~0.405 ~-0.2 ~ {Tags:["mrg_judge","mrg_judge2"]}
+execute at @e[tag=mrg_line] run summon minecraft:block_display ~0.605 ~-0.2 ~ {Tags:["mrg_judge","mrg_judge3"]}
 
 #見過ごし用エンティティ
-execute at @e[tag=mrg_line] run summon minecraft:block_display ~ ~-0.5 ~ {Tags:["mrg_judge","mrg_miss_judge0"]}
-execute at @e[tag=mrg_line] run summon minecraft:block_display ~0.205 ~-0.5 ~ {Tags:["mrg_judge","mrg_miss_judge1"]}
-execute at @e[tag=mrg_line] run summon minecraft:block_display ~0.405 ~-0.5 ~ {Tags:["mrg_judge","mrg_miss_judge2"]}
-execute at @e[tag=mrg_line] run summon minecraft:block_display ~0.605 ~-0.5 ~ {Tags:["mrg_judge","mrg_miss_judge3"]}
+execute at @e[tag=mrg_line] run summon minecraft:block_display ~ ~-0.7 ~ {Tags:["mrg_judge","mrg_miss_judge0"]}
+execute at @e[tag=mrg_line] run summon minecraft:block_display ~0.205 ~-0.7 ~ {Tags:["mrg_judge","mrg_miss_judge1"]}
+execute at @e[tag=mrg_line] run summon minecraft:block_display ~0.405 ~-0.7 ~ {Tags:["mrg_judge","mrg_miss_judge2"]}
+execute at @e[tag=mrg_line] run summon minecraft:block_display ~0.605 ~-0.7 ~ {Tags:["mrg_judge","mrg_miss_judge3"]}
 
 #スコア関連
 execute at @e[tag=mrg_bg] run summon minecraft:text_display ~1.0 ~0.5 ~0.021 {text:'{"text":"GREAT :","color":"yellow","bold":true}',background:24,Tags:["mrg_score_labels","mrg_great_label"]}
